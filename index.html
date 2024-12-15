@@ -81,6 +81,7 @@
         <script src="data/Hiroshima_49.js"></script>
         <script src="data/Tottori_50.js"></script>
         <script src="data/Yamagata_51.js"></script>
+        <script src="data/Okinawa_52.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -2538,6 +2539,32 @@
                 interactive: true,
             }
                     break;
+                case '天草市':
+                    return {
+                pane: 'pane_Kumamoto_12',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '苓北町':
+                    return {
+                pane: 'pane_Kumamoto_12',
+                opacity: 1,
+                color: 'rgba(128,128,128,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
             }
         }
         map.createPane('pane_Kumamoto_12');
@@ -2579,13 +2606,6 @@
                 default:
                     return {
                 pane: 'pane_Gunma_13',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
                 interactive: true,
             }
                     break;
@@ -2667,6 +2687,45 @@
                 interactive: true,
             }
                     break;
+                case '高山運輸倉庫':
+                    return {
+                pane: 'pane_Gunma_13',
+                opacity: 1,
+                color: 'rgba(28,204,12,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '群馬バス':
+                    return {
+                pane: 'pane_Gunma_13',
+                opacity: 1,
+                color: 'rgba(46,203,255,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Dts creation':
+                    return {
+                pane: 'pane_Gunma_13',
+                opacity: 1,
+                color: 'rgba(28,147,12,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
                 case '伊勢崎市':
                     return {
                 pane: 'pane_Gunma_13',
@@ -2724,6 +2783,32 @@
                 pane: 'pane_Gunma_13',
                 opacity: 1,
                 color: 'rgba(166,166,166,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '高崎市':
+                    return {
+                pane: 'pane_Gunma_13',
+                opacity: 1,
+                color: 'rgba(128,128,128,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '東吾妻町':
+                    return {
+                pane: 'pane_Gunma_13',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3285,6 +3370,32 @@
                 interactive: true,
             }
                     break;
+                case '武蔵観光':
+                    return {
+                pane: 'pane_Saitama_17',
+                opacity: 1,
+                color: 'rgba(151,16,228,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '協同貨物自動車':
+                    return {
+                pane: 'pane_Saitama_17',
+                opacity: 1,
+                color: 'rgba(209,14,229,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
                 case '小鹿野町':
                     return {
                 pane: 'pane_Saitama_17',
@@ -3394,19 +3505,6 @@
                 pane: 'pane_Saitama_17',
                 opacity: 1,
                 color: 'rgba(153,153,153,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-                    break;
-                case '武蔵観光':
-                    return {
-                pane: 'pane_Saitama_17',
-                opacity: 1,
-                color: 'rgba(151,16,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -7150,6 +7248,19 @@
                 interactive: true,
             }
                     break;
+                case '東京BRT':
+                    return {
+                pane: 'pane_Tokyo_E_36',
+                opacity: 1,
+                color: 'rgba(41,47,187,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
                 case '港区':
                     return {
                 pane: 'pane_Tokyo_E_36',
@@ -9698,6 +9809,206 @@
         });
         bounds_group.addLayer(layer_Yamagata_51);
         map.addLayer(layer_Yamagata_51);
+        function pop_Okinawa_52(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (i in e.target._eventParents) {
+                        e.target._eventParents[i].resetStyle(e.target);
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['descriptio'] !== null ? autolinker.link(feature.properties['descriptio'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Okinawa_52_0(feature) {
+            switch(String(feature.properties['descriptio'])) {
+                default:
+                    return {
+                pane: 'pane_Okinawa_52',
+                interactive: true,
+            }
+                    break;
+                case '沖縄バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(41,47,187,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '琉球バス交通':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(171,16,228,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '那覇バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(46,203,255,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '東陽バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(28,147,12,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'やんばる急行バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(28,204,12,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '沖縄エアポートシャトル':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(206,31,75,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '東京バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(167,167,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '伊江島観光バス':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(243,174,59,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'カリー観光':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(255,37,62,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '平安座総合開発':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(12,192,183,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '国頭村':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(128,128,128,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '南城市':
+                    return {
+                pane: 'pane_Okinawa_52',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_Okinawa_52');
+        map.getPane('pane_Okinawa_52').style.zIndex = 452;
+        map.getPane('pane_Okinawa_52').style['mix-blend-mode'] = 'normal';
+        var layer_Okinawa_52 = new L.geoJson(json_Okinawa_52, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Okinawa_52',
+            layerName: 'layer_Okinawa_52',
+            pane: 'pane_Okinawa_52',
+            onEachFeature: pop_Okinawa_52,
+            style: style_Okinawa_52_0,
+        });
+        bounds_group.addLayer(layer_Okinawa_52);
+        map.addLayer(layer_Okinawa_52);
         setBounds();
         </script>
     </body>
