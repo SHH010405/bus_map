@@ -220,10 +220,10 @@
         map.createPane('pane_gsi_6');
         map.getPane('pane_gsi_6').style.zIndex = 206;
         //ペインを乗算合成
-        //map.getPane('pane_gsi_6').style.mixBlendMode = "multiply";
+        map.getPane('pane_gsi_6').style.mixBlendMode = "multiply";
         var layer_gsi_6 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', {
             pane: 'pane_gsi_6',
-            opacity: 0.3,
+            opacity: 0.2,
             attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
             minZoom: 1,
             maxZoom: 28,
@@ -3278,6 +3278,19 @@
                 pane: 'pane_Kagawa_14',
                 opacity: 1,
                 color: 'rgba(0,255,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '高松市':
+                    return {
+                pane: 'pane_Kagawa_14',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -7343,6 +7356,19 @@
                 interactive: true,
             }
                     break;
+                case '上田市':
+                    return {
+                pane: 'pane_Nagano_33',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
             }
         }
         map.createPane('pane_Nagano_33');
@@ -8155,6 +8181,45 @@
             }
                     break;
                 case '三好市':
+                    return {
+                pane: 'pane_Tokushima_37',
+                opacity: 1,
+                color: 'rgba(128,128,128,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'つるぎ町':
+                    return {
+                pane: 'pane_Tokushima_37',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '琴平バス':
+                    return {
+                pane: 'pane_Tokushima_37',
+                opacity: 1,
+                color: 'rgba(0,128,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '徳島県':
                     return {
                 pane: 'pane_Tokushima_37',
                 opacity: 1,
@@ -9271,11 +9336,37 @@
                 interactive: true,
             }
                     break;
+                case '阪神バス':
+                    return {
+                pane: 'pane_Hyogo_44',
+                opacity: 1,
+                color: 'rgba(46,55,205,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
                 case 'ウイング神姫':
                     return {
                 pane: 'pane_Hyogo_44',
                 opacity: 1,
                 color: 'rgba(80,141,110,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '伊丹市交通局':
+                    return {
+                pane: 'pane_Hyogo_44',
+                opacity: 1,
+                color: 'rgba(0,112,0,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
